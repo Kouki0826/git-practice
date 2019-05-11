@@ -6,14 +6,17 @@ int tax(int x){
 }
 
 void casher(int x){
-  cout << "お支払金額は";
+  cout << "合計お支払金額は税込";
   cout << tax(x);
   cout << "円です" << endl;
 }
 
 int main(void){
   int a, b;
-  cin >> a >> b;
+  cout << "商品Aの金額を入力してください: ";
+  cin >> a;
+  cout << "商品Bの金額を入力してください: ";
+  cin >> b;
 
   int sum = a + b;
 
