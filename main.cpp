@@ -5,13 +5,19 @@ int tax(int x){
   return x * 1.08;
 }
 
+void casher(int x){
+  cout << "お支払金額は";
+  cout << tax(x);
+  cout << "円です" << endl;
+}
+
 int main(void){
   int a, b;
   cin >> a >> b;
 
   int sum = a + b;
-  sum = tax(sum);
 
-  cout << sum << endl;
+  casher(sum);
+
   return 0;
 }
