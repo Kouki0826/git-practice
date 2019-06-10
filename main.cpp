@@ -2,7 +2,7 @@
 using namespace std;
 
 int tax(int x){
-  return x * 0.08; // 消費税のみの金額を返す
+  return x * 1.08;
 }
 
 void casher(int x){
